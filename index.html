@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Global Digital Clock - Multiple Timezones</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>🌍 Global Digital Clock</h1>
+            <p>Real-time display across multiple time zones</p>
+        </header>
+
+        <div class="controls">
+            <div class="search-box">
+                <input type="text" id="timezoneSearch" placeholder="Search timezones (e.g., New York, Tokyo)...">
+                <button id="addBtn" class="btn btn-primary">+ Add Timezone</button>
+            </div>
+            <div class="button-group">
+                <button id="resetBtn" class="btn btn-secondary">Reset to Default</button>
+                <button id="toggleFormatBtn" class="btn btn-secondary">Toggle 24H/12H</button>
+            </div>
+        </div>
+
+        <div id="suggestionsDropdown" class="suggestions-dropdown"></div>
+
+        <div class="clocks-grid" id="clocksGrid">
+            <!-- Clock cards will be inserted here dynamically -->
+        </div>
+    </div>
+
+    <script src="app.js"></script>
+</body>
+</html>
